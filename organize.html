@@ -21,7 +21,7 @@
 <body class="bg-light">
 
     <!-- HEADER NAVBAR-->
-    <section class="bg-purple">
+    <section class="bg-dark">
         <nav class="navbar navbar-light navbar-expand-lg navbar-light text-dark px-3">
             <!-- LOGO AND BRAND -->
             <a class="navbar-brand text-light" href="index.html">
@@ -31,7 +31,7 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="img/menu.svg" class="py-2" width="30px" alt="">
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item px-3">
@@ -49,20 +49,85 @@
                     <li class="nav-item pl-3">
                         <a class="nav-link text-light" href="sign in.html">SIGN IN</a>
                     </li>
-                </ul>    
+                </ul>
             </div>
         </nav>
     </section>
 
     <!-- ABOUT -->
     <section>
-        <div class="bg-light">
-            <div class="container">
+        <div class="">
+            <div class="container py-5">
                 <div class="row">
-                    <h1 class="text-center"> FAQ</h1>
-                    <!-- <img src="img/02.png" class="img-fluid" alt="">
-                    <div class="col"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quasi.</div>
-                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id est, similique fugiat mollitia iure qui libero esse voluptate officia dignissimos aperiam magni asperiores voluptatum voluptas modi architecto consequatur! Veritatis.</div> -->
+                    <div class="col col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                            </div>
+                        </div>
+                        
+                        <label for="basic-url">Your vanity URL</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                            </div>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <select class="custom-select" id="inputGroupSelect02">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="input-group-append">
+                                <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                                <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">With textarea</span>
+                            </div>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                    <!-- <div class="w-100"></div>
+                    <div class="col">
+                        <small class="text-center">Don't have an account</small>
+                        <small class="text-center"><a href="">Sign Up</a></small>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -103,8 +168,6 @@
             </div>
         </div>
     </section> -->
-
-    </section>
 
     <!-- JAVASCRIPT -->
     <section>
