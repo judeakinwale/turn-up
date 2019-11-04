@@ -8,7 +8,7 @@
     <title>TURN UP</title>
 
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -18,10 +18,10 @@
 
 </head>
 
-<body class="bg-purple">
+<body>
 
     <!-- HEADER NAVBAR-->
-    <section>
+    <section  class="bg-dark">
         <nav class="navbar navbar-light navbar-expand-lg navbar-light text-dark px-3">
             <!-- LOGO AND BRAND -->
             <a class="navbar-brand text-light" href="index.html">
@@ -54,167 +54,402 @@
         </nav>
     </section>
 
+    <!-- SEARCH -->
+    <section class="bg-light">
+        <div class="container">
+            
+            <div class="input-group pt-3">
+                <input type="search" class="form-control" aria-label="Search Input" placeholder="Search Events">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    
+                </div>
+            </div>
+            <nav>
+
+            </nav>
+        </div>
+    </section>
+
     <!-- EVENTS -->
     <section>
-        <div class="bg-light">
-            <div class="container py-5">
-                <div class="pb-3">
-                    <h2>EVENTS</h2>
-                </div>
+        <!-- <div class="container py-5">
+            <div class="pb-3">
+                <h2>EVENTS</h2>
+            </div>
 
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
                     </div>
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This card has even longer content than the first to show that equal height action.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
-                <br>
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
                     </div>
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This card has even longer content than the first to show that equal height action.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
-                <br>
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="pt-5 pb-3">
+            <h2>Events</h2>
+        </div> -->
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h2 class="pb-3">EVENTS</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                                role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <!-- To replace the svg above -->
+                            <!-- <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false"
+                                role="img" aria-label="Placeholder: Thumbnail"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                                role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This card has even longer content than the first to show that equal height action.
-                            </p>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                                role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- PAGINATION -->
+            <section class=" bg-light">
+                <div class="container pt-3">
+                    <nav aria-label="Page navigation example text-dark">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link text-dark" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
         </div>
     </section>
     
-    <!-- PAGINATION -->
-    <section>
-        <div class="bg-light">
-            <div class="container py-3">
-                <nav aria-label="Page navigation example text-dark">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link text-dark" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </section>
+    
 
-    <section class="container-fluid">
                 
-        <!-- FOOTER -->
-        <section>
-            <div class="row">
+    <!-- FOOTER -->
+    <section>
+        <p class="copyright-text pt-3 text-center">&copy; 2019 TURN UP, RIGHTS RESERVED</p>
+    </section>
+    <!-- <section class="bg-purple">
+        <div class="container-fluid">
+            <div class="row bg-Purple">
                 <div class="col-12 col-md pt-3 px-5">
                     <ul class="nav float-lg-left justify-content-center">
                         <a href="" class="text-light"><small>Lorem ipsum dolor sit amet.</small></a>
                     </ul>
-                </div>
+                </div> -->
                 <!-- SOCIAL -->
-                <div class="col-12 col-md py-3 px-5 ">
+                <!-- <div class="col-12 col-md py-3 px-5 ">
                     <ul class="nav float-lg-right justify-content-center">
                         <li class="">
                             <a href="#">
@@ -233,22 +468,21 @@
                         </li>
                     </ul>
                 </div>
-                <div class="w-100"></div>
+                <div class="w-100"></div> -->
                 <!-- COPYRIGHT -->
-                <div class="col justify-content-center">
+                <!-- <div class="bg-Purple col justify-content-center">
                     <p class="copyright-text text-center text-light">&copy; 2019 TURN UP, RIGHTS RESERVED </p>
                 </div>
             </div>
-        </section>
-
-    </section>
+        </div>
+    </section> -->
 
     <!-- JAVASCRIPT -->
-    <!-- <section>
+    <section>
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
         <script src="js/popper.min.js"></script>
-    </section> -->
+        <script src="js/bootstrap.min.js"></script>
+    </section>
 
     <section>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
