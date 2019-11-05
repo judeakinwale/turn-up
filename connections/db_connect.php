@@ -20,7 +20,9 @@ $table_users_profile =  "CREATE TABLE IF NOT EXISTS `users_profile`
 `city` VARCHAR(10) NOT NULL , 
 `login_token` VARCHAR(100) NULL , 
 PRIMARY KEY (`ID`), 
-UNIQUE (`username`)) 
+UNIQUE (`username`),
+UNIQUE (`mobile_number`),
+UNIQUE (`e_mail`)) 
 ENGINE = InnoDB;";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass) or die('unable to connect now retry later' . mysqli_error_list($conn));
 //Create the database
