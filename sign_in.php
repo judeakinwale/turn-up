@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/tu Logo 2.png">
     <title>TURN UP</title>
 
     <!-- CSS -->
@@ -26,27 +27,58 @@
         <div class="">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col col-md-6">
-                        <form>
+                    <div class="col-lg-6">
+                        <form method="POST" action="./connections/process_sign_in.php">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <input name="e_mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="">
                             </div>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input name="remember_me" type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remember me</label>
                             </div>
                             <button type="submit" class="btn bg-purple text-light">Sign In</button>
                         </form>
-                        <div class="mt-3">
-                            <small class="">Don't have an account <a href="sign_up.php">Sign Up</a></small>
-                        </div>
                     </div>
+
+                    <div class="col-lg-6">
+                        <form action="">
+                            <div class="py-3 py-md-0 text-center">
+                                <h5>OR</h5>
+                                <div class="row py-3 justify-content-center">
+                                    <div class="btn-group col-12 col-sm-10 col-xl-6" role="group">
+                                        <button type="button" class="btn btn-lg btn-primary">
+                                            <img src="img/facebook-white-2.png" class="" height="20px" alt="">
+                                        </button>
+                                        <button type="button" class="btn btn-primary w-100">
+                                            Sign In Using Facebook
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row py-3 justify-content-center">
+                                    <div class="btn-group col-12 col-sm-10 col-xl-6" role="group">
+                                        <button type="button" class="btn btn-lg btn-danger">
+                                            <img src="img/google-white.png" class="" height="20px" alt="">
+                                        </button>
+                                        <button type="button" class="btn btn-danger w-100">
+                                            Sign In Using Google
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <small><a href="">Forgot Password?</a></small>
+                        <br>
+                        <small class="">Don't have an account? <a href="sign_up.php">Sign Up</a></small>
+                    </div>
+
                 </div>
             </div>
         </div>

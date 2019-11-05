@@ -1,5 +1,6 @@
 <section>
-    <div class="row">
+    
+<div class="row">
         <div class="col-12 col-md pt-3 px-5">
             <ul class="nav float-lg-left justify-content-center">
                 <a href="" class="text-light"><small>Lorem ipsum dolor sit amet.</small></a>
