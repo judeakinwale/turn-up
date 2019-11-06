@@ -32,12 +32,13 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-6">
-                        <?php echo "<p class='text-danger'>".@$_SESSION['db_create_profile_error']."</p>"; ?>
-                        <form method="POST" action="./connections/process_sign_up.php">
-                            <div class="form-row">
+                        <?php echo "<p class='text-danger'>" . @$_SESSION['db_create_profile_error'] . "</p>"; ?>
+                        <form method="POST" action="./connections/process_sign_up.php" onsubmit="return validateSignUp()">
+                            <div class="form-row" id="name_row">
                                 <div class="form-group col-sm-6">
                                     <label for="InputFirstName">First name</label>
                                     <input name="first_name" type="text" class="form-control" placeholder="First name" id="InputFirstName">
+
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="InputLastName">Last name</label>
@@ -140,19 +141,13 @@
 
     <!-- JAVASCRIPT -->
     <section>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-    </section>
-
-    <section>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     </section>
 
+    <script src="./js/validation.js"></script>
 </body>
 
 </html>
