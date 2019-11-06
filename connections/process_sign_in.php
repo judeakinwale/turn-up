@@ -32,12 +32,13 @@ if ($results->num_rows > 0) {
         // $_COOKIE
     } else {
         //wrong password
-        echo '<p>wrong password';
+        header('Location: ../sign_in.php');
+        // echo '<p>wrong password';
     }
 } else {
     //user do not exsist
     // echo 'okay'. bin2hex(random_bytes(50));
-        header('Location: ../sign_in.php');
+    header('Location: ../sign_in.php');
 }
 // echo '<p>'.$e_mail;
 // echo '<p>'.$password;

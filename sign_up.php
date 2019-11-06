@@ -32,12 +32,13 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-6">
-                        <?php echo "<p class='text-danger'>".@$_SESSION['db_create_profile_error']."</p>"; ?>
-                        <form method="POST" action="./connections/process_sign_up.php">
-                            <div class="form-row">
+                        <?php echo "<p class='text-danger'>" . @$_SESSION['db_create_profile_error'] . "</p>"; ?>
+                        <form method="POST" action="./connections/process_sign_up.php" onsubmit="return validateSignUp()">
+                            <div class="form-row" id="name_row">
                                 <div class="form-group col-sm-6">
                                     <label for="InputFirstName">First name</label>
                                     <input name="first_name" type="text" class="form-control" placeholder="First name" id="InputFirstName">
+
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="InputLastName">Last name</label>
@@ -153,6 +154,7 @@
 
     </section>
 
+    <script src="./js/validation.js"></script>
 </body>
 
 </html>
