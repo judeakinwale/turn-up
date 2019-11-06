@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,15 +29,16 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form method="POST" action="./connections/process_sign_in.php">
+                        <form method="POST" action="./connections/process_sign_in.php" onsubmit="return validateSignIn()">
+                            <?php echo @$_SESSION['login_error'] ?>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input name="e_mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                <input name="e_mail" type="email" class="form-control" id="emailHelp" aria-describedby="emailHelp" placeholder="">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                <input name="password" type="password" class="form-control" id="inputPassword" placeholder="">
                             </div>
                             <div class="form-group form-check">
                                 <input name="remember_me" type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -97,7 +99,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     </section>
-
+    <script src="./js/validation.js"></script>
 </body>
 
 </html>
+<?php session_destroy() ?>

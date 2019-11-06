@@ -26,18 +26,15 @@ if ($results->num_rows > 0) {
         } else {
             setcookie('login_token', $login_token, 0, '/');
         }
-        // echo '<p>loged in<p>';
-        // echo $_COOKIE['login_token'];
         header('Location: ../index.php');
-        // $_COOKIE
     } else {
         //wrong password
+    $_SESSION['login_error'] = '<p class="text-danger">invalid credencitals</p>';
         header('Location: ../sign_in.php');
-        // echo '<p>wrong password';
     }
 } else {
     //user do not exsist
-    // echo 'okay'. bin2hex(random_bytes(50));
+    $_SESSION['login_error'] = '<p class="text-danger">invalid credencitals</p>';
     header('Location: ../sign_in.php');
 }
 // echo '<p>'.$e_mail;

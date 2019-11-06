@@ -6,12 +6,15 @@ const validateNames = (_first_name, _last_name, _errorMsg, _name_row) => {
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'Name field can not be empty';
         name_row.appendChild(_errorMsg);
+        _errorMsg.focus();
+        _first_name.focus();
         isValid = false;
     } else if (_first_name.value.length < 3 || _last_name.value.length < 3) {
         _errorMsg.id = "errorMsgText";
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'Name too short: as to be at least 3 char';
         _name_row.appendChild(_errorMsg);
+        _first_name.focus();
         isValid = false;
     }
     return isValid;
@@ -24,12 +27,14 @@ const validateUsername = (_username, _errorMsg) => {
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'Username field can not be empty';
         _username.parentNode.insertBefore(_errorMsg, _username.nextSibling);
+        _username.focus();
         isValid = false;
     } else if (_username.value.length < 5) {
         _errorMsg.id = "errorMsgText";
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'Choose at least 5 characters for username';
         _username.parentNode.insertBefore(_errorMsg, _username.nextSibling);
+        _username.focus();
         isValid = false;
     }
     return isValid;
@@ -47,12 +52,14 @@ const validateMobileNumber = (_mobile_number, _errorMsg) => {
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'Phone number field can not be empty';
         _mobile_number.parentNode.insertBefore(_errorMsg, _mobile_number.nextSibling);
+        _mobile_number.focus();
         isValid = false;
     } else if (!Number(_mobile_number.value)) {
         _errorMsg.id = "errorMsgText";
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'Not a valid phone number';
         _mobile_number.parentNode.insertBefore(_errorMsg, _mobile_number.nextSibling);
+        _mobile_number.focus();
         isValid = false;
     }
     return isValid;
@@ -69,12 +76,14 @@ const validateDateOfBirth = (_date_of_birth, _errorMsg) => {
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'DoB field can not be empty';
         _date_of_birth.parentNode.insertBefore(_errorMsg, _date_of_birth.nextSibling);
+        _date_of_birth.focus();
         isValid = false;
     } else if (age < 18) {
         _errorMsg.id = "errorMsgText";
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'Only user about 18 can register';
         _date_of_birth.parentNode.insertBefore(_errorMsg, _date_of_birth.nextSibling);
+        _date_of_birth.focus();
         isValid = false;
     }
     return isValid
@@ -87,18 +96,21 @@ const validatePassword = (_password, _errorMsg) => {
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'password field can not be empty';
         _password.parentNode.insertBefore(_errorMsg, _password.nextSibling);
+        _password.focus();
         isValid = false;
     } else if (_password.value.length < 8) {
         _errorMsg.id = "errorMsgText";
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'password must be at least 8 character';
         _password.parentNode.insertBefore(_errorMsg, _password.nextSibling);
+        _password.focus();
         isValid = false;
     } else if (_password.value.length > 20) {
         _errorMsg.id = "errorMsgText";
         _errorMsg.className = "text-danger";
         _errorMsg.textContent = 'password must be at most 20 character';
         _password.parentNode.insertBefore(_errorMsg, _password.nextSibling);
+        _password.focus();
         isValid = false;
     }
     return isValid;
@@ -111,6 +123,7 @@ const validateCheckAgree = (_check_agree, _errorMsg) => {
         _errorMsg.className = "text-danger";
         _errorMsg.innerHTML = '<p>Terms and conditions must be acknownledge before proceding<p>';
         _check_agree.parentNode.appendChild(_errorMsg); //insertBefore(_errorMsg, _check_agree.nextSibling);
+        _check_agree.focus();
         isValid = false;
     }
     return isValid;
@@ -144,5 +157,20 @@ const validateSignUp = () => {
         validateDateOfBirth(date_of_birth, errorMsg) &&
         validatePassword(password, errorMsg) &&
         validateCheckAgree(check_agree, errorMsg);
+    return submitForm;
+}
+const validateSignIn = () => {
+    var e_mail = document.querySelector('#emailHelp');
+    var password = document.querySelector('#inputPassword');
+    var errorMsgText = document.querySelectorAll('#errorMsgText');
+    var errorMsg = document.createElement('small');
+    //clear all errors
+    if (errorMsgText) {
+        errorMsgText.forEach(text => text.remove());
+    }
+    // is validation met;
+    let submitForm =
+        validateEmail(e_mail, errorMsg) &&
+        validatePassword(password, errorMsg);
     return submitForm;
 }
