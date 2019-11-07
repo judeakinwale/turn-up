@@ -2,7 +2,7 @@
 session_start();
 require('./db_connect.php');
 $e_mail = $_REQUEST['e_mail'];
-$password = $_REQUEST['password'];
+$password = strtolower($_REQUEST['password']);
 $login_token = bin2hex(random_bytes(30));
 
 if (isset($_REQUEST['remember_me'])) {
@@ -16,8 +16,6 @@ $db_upadte_login_token_SQL = "UPDATE `users_profile` SET `login_token` = '$login
 $results = $conn->query($db_select_all_SQL);
 if ($results->num_rows > 0) {
     $row = $results->fetch_assoc();
-    echo '<p>' . $password;
-    echo '<p>' . $row['password'] . '</p>';
     if (password_verify($password, $row['password'])) {
         //log in
         $conn->query($db_upadte_login_token_SQL);
@@ -29,8 +27,9 @@ if ($results->num_rows > 0) {
         header('Location: ../index.php');
     } else {
         //wrong password
-    $_SESSION['login_error'] = '<p class="text-danger">invalid credencitals</p>';
-        header('Location: ../sign_in.php');
+        // echo password_verify($password, $row['password']);
+        $_SESSION['login_error'] = '<p class="text-danger">invalid credencitals</p>';
+        // header('Location: ../sign_in.php');
     }
 } else {
     //user do not exsist

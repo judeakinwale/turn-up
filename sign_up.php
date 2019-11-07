@@ -67,7 +67,7 @@
                             <div class="form-group">
                                 <label for="inputPassword">Password</label>
                                 <div class="input-group">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="" aria-describedby="passwordHelpBlock">
+                                    <input name="password" type="password" class="form-control" id="inputPassword" placeholder="" aria-describedby="passwordHelpBlock">
                                     <div class="input-group-append">
                                         <button class="btn btn-default reveal" type="button" onclick="showpass()">
                                             <i class="fa fa-eye-slash" id="show-eye"></i>
