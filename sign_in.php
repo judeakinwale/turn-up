@@ -38,7 +38,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input name="password" type="password" class="form-control" id="inputPassword" placeholder="">
+                                <input name="password" type="password" class="form-control" id="inputPassword" placeholder="" />
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-default reveal" type="button" onclick="showpass()">
+                                        <i class="fa fa-eye-slash" id="show-eye"></i>
+                                    </button>
+                                </div>
                             </div>
                             <div class="form-group form-check">
                                 <input name="remember_me" type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -94,7 +99,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     </section>
-    <!-- <script src="./js/validation.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/baf1bb5cb9.js" crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
 </body>
 
 </html>

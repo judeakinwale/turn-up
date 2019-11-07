@@ -55,8 +55,15 @@
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group">
+                                <!-- <span class="input-group-text" id="basic-addon2">@example.com</span> -->
                                 <label for="inputPhoneNo">Phone No.</label>
-                                <input name="mobile_number" type="tel" class="form-control" id="inputPhoneNo">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <span id="flag"></span>
+                                    </span>
+                                    <input name="mobile_number" type="tel" class="form-control" id="inputPhoneNo">
+
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputDoB">Date of Birth</label>
@@ -65,6 +72,11 @@
                             <div class="form-group">
                                 <label for="inputPassword">Password</label>
                                 <input name="password" type="password" class="form-control" id="inputPassword" placeholder="" aria-describedby="passwordHelpBlock">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-default reveal" type="button" onclick="showpass()">
+                                        <i class="fa fa-eye-slash" id="show-eye"></i>
+                                    </button>
+                                </div>
                                 <small id="passwordHelpBlock" class="form-text text-muted">
                                     Your password must be 8-20 characters long.
                                 </small>
@@ -74,17 +86,14 @@
 
                                 <div class="form-group col-md-6">
                                     <label for="inputZip">Country</label>
-                                    <!-- <input type="text" class="form-control" id="inputCountry"> -->
                                     <select name="country" id="inputCountry" class="form-control">
                                         <option selected>Choose...</option>
-                                        <option>...</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputState">State</label>
                                     <select name="state" id="inputState" class="form-control">
                                         <option selected>Choose...</option>
-                                        <option>...</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-8">
@@ -141,13 +150,16 @@
 
     <!-- JAVASCRIPT -->
     <section>
+
+        <script src="https://kit.fontawesome.com/baf1bb5cb9.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <script src="./js/countries.js"></script>
+        <script src="./js/validation.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     </section>
-
-    <script src="./js/validation.js"></script>
 </body>
 
 </html>
