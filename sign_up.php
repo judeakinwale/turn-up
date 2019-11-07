@@ -32,9 +32,9 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-6">
-                        <?php echo "<p class='text-danger'>".@$_SESSION['db_create_profile_error']."</p>"; ?>
-                        <form method="POST" action="./connections/process_sign_up.php">
-                            <div class="form-row">
+                        <?php echo "<p class='text-danger'>" . @$_SESSION['db_create_profile_error'] . "</p>"; ?>
+                        <form method="POST" action="./connections/process_sign_up.php" onsubmit="return validateSignUp()">
+                            <div class="form-row" id="name_row">
                                 <div class="form-group col-sm-6">
                                     <label for="InputFirstName">First name</label>
                                     <input name="first_name" type="text" class="form-control" placeholder="First name" id="InputFirstName">
@@ -55,7 +55,10 @@
                             </div>
                             <div class="form-group">
                                 <label for="inputPhoneNo">Phone No.</label>
-                                <input name="mobile_number" type="tel" class="form-control" id="inputPhoneNo">
+                                <span class="input-group-prepend">
+                                    <span id="flag" style=""></span>
+                                    <input name="mobile_number" type="tel" class="form-control" id="inputPhoneNo">
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="inputDoB">Date of Birth</label>
@@ -90,7 +93,6 @@
                                     <label for="inputState">State</label>
                                     <select name="state" id="inputState" class="form-control">
                                         <option selected>Choose...</option>
-                                        <option>...</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-8">
@@ -146,15 +148,11 @@
     </section>
 
     <!-- JAVASCRIPT -->
-    <section>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-    </section>
 
     <section>
         <script src="https://kit.fontawesome.com/baf1bb5cb9.js" crossorigin="anonymous"></script>
+        <script src="./js/validation.js"></script>
+        <script src="./js/countries.js"></script>
         <script src="js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
