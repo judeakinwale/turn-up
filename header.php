@@ -23,30 +23,21 @@
                 <li class="nav-item px-3">
                     <a class="nav-link text-light" href="create_event.php">CREATE EVENT</a>
                 </li>
-                <li class="nav-item pl-3">
+                <li class="nav-item px-3">
                     <?php
                     if (isset($_SESSION['db_username'])) {
-                        // echo '  <li class="dropdown">
-                        // <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-                        // <span class="caret"></span></a>
-                        // <ul class="dropdown-menu">
-                        //   <li><a href="#">Page 1-1</a></li>
-                        //   <li><a href="#">Page 1-2</a></li>
-                        //   <li><a href="#">Page 1-3</a></li>
-                        // </ul>';
-                    //     echo '<li class="nav-item dropdown">
-                    //     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    //         <span><img src="./img/profile.png" alt="profile" width="30" height="30"> ' . $_SESSION['db_username'] . '</span>
-                    //     </a>
-                    //     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    //       <a class="dropdown-item" href="#">Action</a>
-                    //       <a class="dropdown-item" href="#">Another action</a>
-                    //       <div class="dropdown-divider"></div>
-                    //       <a class="dropdown-item" href="#">Something else here</a>
-                    //     </div>
-                    //   </li>';
-                        echo '<a class="nav-link text-light" href="./connections/sign_out.php"><span><img src="./img/profile.png" alt="profile" width="30" height="30"> ' . $_SESSION['db_username'] . '</span></a>';
-                    } else {
+                         echo '<div class="dropdown" style="top: 14%; cursor: pointer;">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <span><img src="./img/profile.png" alt="profile" width="30" height="30">' . $_SESSION['db_username'] . '<span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#">Profile</a>
+                           <a class="dropdown-item" href="#">Logout</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                         </div>
+                       </li>';
+                    }else {
                         echo '<a class="nav-link text-light" href="sign_in.php">SIGN IN</a>';
                     }
                     // function signOUt()

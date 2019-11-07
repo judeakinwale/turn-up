@@ -1,0 +1,39 @@
+@import "./variables";
+@import "./mixin";
+
+
+nav #h4{
+            color: $basicColor;
+}
+nav {
+            @include nav-attributes;
+            z-index: 10;
+}
+#demo{
+            color: $basicColor;
+}
+.resp-nav{
+            float: right;
+            position: absolute;
+            right: 5%;
+            cursor: pointer;
+            display: none;
+}
+#togle-btn{
+            height: 5px;
+            width: 30px;
+            background: $basicColor;
+            display: block;
+            margin-top: 5px;
+
+}
+#cancel{
+            font-size: 50px;
+            position: absolute;
+            cursor: pointer;
+            margin-top: 5;
+            right: 80px;
+            color: white;
+            display: none;
+            z-index: 6;
+}

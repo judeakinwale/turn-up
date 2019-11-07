@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./header";
+@import "./mixin";
+@import "./forms";
+
+@media only screen and (max-width:360px){
+    #input{
+            margin-top: 15px;
+            border-color: $defaultColor;
+            width: 85%;
+            margin-left: 5%;
+            &:focus{
+                transition: 1s;
+                border: 2px solid $defaultColor;
+            }
+    }
+#signup-btn{
+            margin-left: 20px;
+
+    }
+}
+/*medium screens after tablet*/
+@media only screen and (max-width:768px){
+    
+    .acctQuest{
+        margin-left: 110px;
+        margin-top: 8px;
+    }
+    .nav-bg{
+        border: 1px solid;
+        height: 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0,0.5);
+        margin-top: 200px;
+        position: fixed;
+        z-index: 1;
+        overflow-y: hidden;
+        transition: 0.7s;
+        border: none;
+    }
+    .resp-nav{
+        display: block;
+    }
+    #cancel{
+        padding-right: -100px;
+    }
+    nav{
+        ul{
+            margin-right: 30%;
+            margin-top: -350px;
+            transition: 1s;
+
+        }
+        li{
+            font-size: 30px;
+        }
+    }
+    #nav-btn{
+            width: 200px;
+            height: 50px;
+            font-size: 19px;
+    }
+  
+}

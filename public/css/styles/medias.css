@@ -1,0 +1,271 @@
+nav #h4 {
+  color: white;
+}
+
+nav {
+  z-index: 10;
+}
+
+nav ul {
+  float: right;
+  position: absolute;
+  right: 5%;
+  z-index: 6;
+  margin-top: -15px;
+}
+
+nav li {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+  border-radius: 5px !important;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+nav a:focus {
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  color: white;
+  border-radius: 5px !important;
+}
+
+nav #nav-btn {
+  background: purple;
+  color: white;
+  padding: 7px 15px 7px 15px;
+  border: none;
+}
+
+nav #nav-btn:hover {
+  background: white;
+  color: purple;
+  border: 1px solid purple;
+}
+
+#demo {
+  color: white;
+}
+
+.resp-nav {
+  float: right;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+#togle-btn {
+  height: 5px;
+  width: 30px;
+  background: white;
+  display: block;
+  margin-top: 5px;
+}
+
+#cancel {
+  font-size: 50px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 5;
+  right: 80px;
+  color: white;
+  display: none;
+  z-index: 6;
+}
+
+.signup-form {
+  border: 1px solid silver;
+  height: 540px;
+  width: 350px;
+  margin-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: none;
+  z-index: -2;
+  /*box-shadow: 1px 1px 1px 1px silver;*/
+}
+
+#h3 {
+  color: white;
+}
+
+#input {
+  margin-top: 15px;
+  border-color: purple;
+}
+
+#input:focus {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 2px solid white;
+}
+
+#signup-btn {
+  width: 80%;
+  margin-left: 20px;
+  background: purple;
+  border: 1px solid purple;
+}
+
+#signup-btn:hover {
+  background: white;
+  color: purple;
+}
+
+/*.form-img{
+        border: $defaultBorder;
+        width: 50%;
+        height: 650px;
+        margin-left: 50%;
+        background-image: url("../../imgs/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        margin-top: -615px;
+}*/
+.login-form {
+  border: 1px solid silver;
+  height: 540px;
+  width: 350px;
+  margin-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: none;
+  z-index: -2;
+  /*box-shadow: 1px 1px 1px 1px silver;*/
+  height: 440px;
+  border-radius: 15px;
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+.acctQuest {
+  border: 1px solid silver;
+  height: 50px;
+  width: 350px;
+  margin-left: 120px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* box-shadow: 1px 1px 1px 1px silver;*/
+  border: none;
+}
+
+.acctQuest ul {
+  list-style-type: none;
+  margin-left: -150px;
+  position: absolute;
+}
+
+.acctQuest li {
+  display: inline;
+  padding-left: 8px;
+}
+
+.acctQuest a {
+  text-decoration: none;
+}
+
+.log ul {
+  margin-top: 15px;
+  margin-left: -150px;
+}
+
+.hr1 {
+  width: 100px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.hr2 {
+  width: 100px;
+  position: absolute;
+  margin-left: 150px;
+}
+
+b {
+  position: absolute;
+  margin-left: 120px;
+  color: grey;
+}
+
+#fb-btn {
+  font-size: 14px;
+  width: 80%;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 360px) {
+  #input {
+    margin-top: 15px;
+    border-color: purple;
+    width: 85%;
+    margin-left: 5%;
+  }
+  #input:focus {
+    -webkit-transition: 1s;
+    transition: 1s;
+    border: 2px solid purple;
+  }
+  #signup-btn {
+    margin-left: 20px;
+  }
+}
+
+/*medium screens after tablet*/
+@media only screen and (max-width: 768px) {
+  .acctQuest {
+    margin-left: 110px;
+    margin-top: 8px;
+  }
+  .nav-bg {
+    border: 1px solid;
+    height: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+    position: fixed;
+    z-index: 1;
+    overflow-y: hidden;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    border: none;
+  }
+  .resp-nav {
+    display: block;
+  }
+  #cancel {
+    padding-right: -100px;
+  }
+  nav ul {
+    margin-right: 30%;
+    margin-top: -350px;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  nav li {
+    font-size: 30px;
+  }
+  #nav-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 19px;
+  }
+}
+/*# sourceMappingURL=medias.css.map */

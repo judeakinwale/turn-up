@@ -1,0 +1,73 @@
+@import "./variables";
+
+@mixin nav-attributes{
+    
+ul{
+       float: right;
+       position: absolute;
+       right: 5%;
+       z-index: 6;
+       margin-top: -15px;
+
+
+}
+li{
+        padding-left: 8px;
+        padding-right: 8px;
+
+}
+a{
+        color: $basicColor;
+        &:hover{
+            color: $basicColor;
+            border-radius: 5px !important;
+            transition: 0.6s;
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+        }
+        &:focus{
+            border-bottom: 3px solid;
+            border-top: 3px solid;
+            color: $basicColor;
+            border-radius: 5px !important;
+        }
+}
+#nav-btn{
+        background: $defaultColor;
+        color: $basicColor;
+        padding: 7px 15px 7px 15px;
+        border: none;
+        &:hover{
+            background: $basicColor;
+            color: $defaultColor;
+            border: 1px solid $defaultColor;
+        }
+}
+
+}
+@mixin forms {
+        border: $defaultBorder silver;
+        height: $form-height;
+        width: $form-width;
+        margin-top: 15px;
+        padding-left: $form-padding;
+        padding-right: $form-padding;        
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border: none;
+        z-index: -2;               
+        /*box-shadow: 1px 1px 1px 1px silver;*/
+        
+}
+@mixin submit-btn {
+        width: 80%;
+        margin-left: 20px;
+        background: $defaultColor;
+        border: 1px solid $defaultColor;
+
+        &:hover{
+                background: white;
+                color: $defaultColor;
+        }
+        
+}
