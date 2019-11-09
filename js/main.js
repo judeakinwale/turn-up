@@ -1,4 +1,3 @@
-
 function showpass() {
     var pswd = document.getElementById("inputPassword")
     var showhide = document.getElementById("show-eye")

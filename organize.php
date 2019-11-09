@@ -24,7 +24,7 @@ require('./connections/user_login_status.php');
 <body class="bg-light">
 
     <!-- HEADER NAVBAR-->
-    <?php require('header.php') ?>
+    <?php require('header_slim.php') ?>
     <!-- ABOUT -->
     <section>
         <div class="">

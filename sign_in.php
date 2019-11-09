@@ -22,7 +22,7 @@
 <body class="bg-light">
 
     <!-- HEADER NAVBAR-->
-    <?php require('header.php') ?>
+    <?php require('header_slim.php') ?>
     <!-- SIGN IN -->
     <section>
         <div class="">
@@ -32,17 +32,19 @@
                         <form method="POST" action="./connections/process_sign_in.php" onsubmit="return validateSignIn()">
                             <?php echo @$_SESSION['login_error'] ?>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
+                                <label for="exampleInputEmail1">Email Address</label>
                                 <input name="e_mail" type="email" class="form-control" id="emailHelp" aria-describedby="emailHelp" placeholder="">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input name="password" type="password" class="form-control" id="inputPassword" placeholder="" />
-                                <div class="input-group-prepend">
-                                    <button class="btn btn-default reveal" type="button" onclick="showpass()">
-                                        <i class="fa fa-eye-slash" id="show-eye"></i>
-                                    </button>
+                                <label for="inputPassword">Password</label>
+                                <div class="input-group">
+                                    <input name="password" type="password" class="form-control" id="inputPassword" placeholder="" />
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-default border border-left-0 rounded-right" type="button" onclick="showpass()">
+                                            <i class="fa fa-eye-slash" id="show-eye"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group form-check">
