@@ -1,5 +1,21 @@
 /* body{font-family: 'Montserrat', sans-serif !important;} */
 .bg-purple{background-color: rgb(86, 1, 134);}
+.text-purple{color: #560186;}
+.btn-purple{color: #fff;background-color: #560186;border-color: #560186;}
+.btn-purple:hover{color:#fff;background-color:#560186;border-color:#560186}
+.btn-purple.focus,.btn-purple:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.555)}
+.btn-outline-purple{color:#560186;border-color:#560186}
+
+.btn-outline-purple:hover{color:#fff;background-color:#560186;border-color:#560186}
+.btn-outline-purple.focus,.btn-outline-purple:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.555)}
+/* .btn-outline-purple.disabled,.btn-outline-purple:disabled{color:#560186;background-color:transparent} */
+/* .btn-outline-purple:not(:disabled):not(.disabled).active, */
+/* .btn-outline-purple:not(:disabled):not(.disabled):active,.show> */
+.btn-outline-purple.dropdown-toggle{color:#fff;background-color:#560186;border-color:#560186}
+/* .btn-outline-purple:not(:disabled):not(.disabled).active:focus, */
+/* .btn-outline-purple:not(:disabled):not(.disabled):active:focus,.show> */
+.btn-outline-purple.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.555)}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;

@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light text-light px-3">
         <!-- LOGO AND BRAND -->
         <a class="navbar-brand text-light" href="index.php">
-            <img src="img/tu Logo 2.png" class="logo" alt="LOGO"> TURN UP <?php  ?>
+            <img src="img/tu Logo 2.png" class="" height="36px" alt="LOGO"> TURN UP <?php  ?>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <img src="img/menu.svg" class="py-2" width="30px" alt="">

@@ -15,7 +15,7 @@ xhrCountry.onreadystatechange = () => {
             selectOptions.value = country['name'];
             selectOptions.textContent = country['name'];
             selectCountry.appendChild(selectOptions);
-            // console.log(country['name'])
+            console.log(country['name'])
         });
     }
 }
@@ -30,7 +30,6 @@ const action = () => {
     flagImage.src = selectedCountryJSON['flag'];
     flagImage.width = 50;
     flagImage.height = 25;
-    flagImage.className = "p-0";
     flagImage.alt = selectedCountryJSON['alpha3Code'];
     // console.log(flagImage);
     flag.appendChild(flagImage);
