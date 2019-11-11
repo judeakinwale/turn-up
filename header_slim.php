@@ -34,7 +34,7 @@
                            <a class="dropdown-item" href="#">Profile</a>
                            <a class="dropdown-item" href="#">Something</a>
                            <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="#">Logout</a>
+                           <a class="dropdown-item" href="./connections/sign_out.php">Logout</a>
                          </div>';
                     } else {
                         echo '<a class="nav-link text-light" href="sign_in.php">SIGN IN</a>';
