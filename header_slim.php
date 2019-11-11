@@ -28,13 +28,15 @@
                     if (isset($_SESSION['db_username'])) {
                         echo '<div class="dropdown" style="top: 14%; cursor: pointer;">
                         <a class="dropdown-toggle" data-toggle="dropdown">
-                            <span><img src="./img/profile.png" alt="profile" width="30" height="30">' . $_SESSION['db_username'] . '<span>
+                            <span><i class="far fa-user fa-lg"></i>
+                                <!-- <img src="./img/profile.png" alt="profile" width="30" height="30"> -->
+                                ' . $_SESSION['db_username'] . '<span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                            <a class="dropdown-item" href="#">Profile</a>
                            <a class="dropdown-item" href="#">Something</a>
                            <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="#">Logout</a>
+                           <a class="dropdown-item" href="./connections/sign_out.php">Logout</a>
                          </div>';
                     } else {
                         echo '<a class="nav-link text-light" href="sign_in.php">SIGN IN</a>';

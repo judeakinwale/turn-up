@@ -26,7 +26,7 @@ require('./connections/user_login_status.php');?>
     <!-- HEADER NAVBAR-->
     <?php require('header_slim.php') ?>
     <!-- SEARCH -->
-    <section class="bg-light">
+    <section class="">
         <div class="container">
 
             <div class="input-group pt-3">
@@ -44,7 +44,7 @@ require('./connections/user_login_status.php');?>
 
     <!-- EVENTS -->
     <section>
-        <div class="album py-5 bg-light">
+        <div class="album py-5">
             <div class="container">
                 <h2 class="pb-3">EVENTS</h2>
                 <div class="row">
@@ -63,10 +63,10 @@ require('./connections/user_login_status.php');?>
                                     additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                        <a href=""><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-cart-plus fa-lg"></i></button>
                                     </div>
-                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                    <small class=""><a class="text-muted" href=""><i class="far fa-heart fa-lg"></i></a></small>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +237,7 @@ require('./connections/user_login_status.php');?>
             </div>
 
             <!-- PAGINATION -->
-            <section class=" bg-light">
+            <section class="">
                 <div class="container pt-3">
                     <nav aria-label="Page navigation example text-dark">
                         <ul class="pagination justify-content-center">
