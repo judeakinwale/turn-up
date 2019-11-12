@@ -41,7 +41,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php'
                             </div>
                             <!-- GET TICKETS BUTTON -->
                             <div class="col-12 py-md-5 py-3">
-                                <button type="button" class="btn btn-lg btn-purple border-white m-md-5 m-3">GET TICKETS</button>
+                                <button type="button" class="btn btn-lg btn-dark border bg-purple m-md-5 m-3">GET TICKETS</button>
                             </div>
                         </div>
                     </div>
@@ -70,9 +70,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php'
             </div>
         </section>
     </section>
-        <!-- FOOTER -->
-        <?php require('footer.php') ?>
-
+    
+    <!-- FOOTER -->
+    <?php require('footer.php') ?>
 
 </body>
 

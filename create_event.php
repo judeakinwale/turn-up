@@ -21,7 +21,7 @@ require('./connections/user_login_status.php'); ?>
 
 </head>
 
-<body class="">
+<body class="bg-light">
 
     <!-- HEADER NAVBAR-->
     <?php require('header_slim.php') ?>
@@ -31,72 +31,65 @@ require('./connections/user_login_status.php'); ?>
             <div class="row">
                 <div class="col-lg-6">
                     <form action="">
-                        <div class="form-group pt-2">
-                            <!-- <label for="">Event Name</label> -->
-                            <input type="text" class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none" id="" placeholder="Event Name">
+                        <div class="form-group">
+                            <label for="">Event Name</label>
+                            <input type="text" class="form-control" id="" placeholder="">
                         </div>
-                        <div class="form-group pt-2">
-                            <!-- <label for="">Description</label> -->
-                            <input type="text" class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none" id="" placeholder="Description">
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <input type="text" class="form-control" id="" placeholder="">
                         </div>
-                        <div class="form-group pt-2">
-                            <!-- <label for="imageUpload">Event Image</label> -->
+                        <div class="form-group">
+                            <label for="imageUpload">Event Image</label>
                             <div class="input-group">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="imageUpload" accept="image/*" aria-describedby="inputGroupFileAddon04">
-                                    <label class="custom-file-label rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none" for="imageUpload">Choose Event Image</label>
+                                    <label class="custom-file-label" for="imageUpload">Choose image</label>
                                 </div>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-purple" type="button" id="imageUploadButton">Upload</button>
                                 </div>
                             </div>
                             <small id="imageUpload" class="form-text text-muted">
-                                Preferably with a 16x9 aspect ratio.
+                                Preferably with a 16 x 9 aspect ratio.
                             </small>
                         </div>
                         <div class="form-row">
-                            <div class="form-group pt-2 pt-2 col-md-8">
-                                <!-- <label for="inputAddress">Address</label> -->
-                                <input name="address" type="text"
-                                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none"
-                                    id="inputAddress" placeholder="Address">
+                            <div class="form-group col-md-8">
+                                <label for="inputAddress">Location</label>
+                                <input name="address" type="text" class="form-control" id="inputAddress" placeholder="">
                             </div>
-                            <div class="form-group pt-2 pt-2 col-md-4">
-                                <!-- <label for="inputCity">City</label> -->
-                                <input name="city" type="text"
-                                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none"
-                                    id="inputCity" placeholder="City">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">City</label>
+                                <input name="city" type="text" class="form-control" id="inputCity">
                             </div>
-                            <div class="form-group pt-2 pt-2 col-md-6">
-                                <!-- <label for="inputCountry">Country</label> -->
-                                <select name="country" id="inputCountry"
-                                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none"
-                                    aria-placeholder="Select your country">
-                                    <option selected>Country</option>
+                            <div class="form-group col-md-6">
+                                <label for="inputCountry">Country</label>
+                                <select name="country" id="inputCountry" class="form-control">
+                                    <option selected>Choose...</option>
                                 </select>
                             </div>
-                            <div class="form-group pt-2 pt-2 col-md-6">
-                                <!-- <label for="inputState">State</label> -->
-                                <select name="state" id="inputState"
-                                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none">
-                                    <option selected>State</option>
+                            <div class="form-group col-md-6">
+                                <label for="inputState">State</label>
+                                <select name="state" id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group pt-2 col-md-7">
-                                <!-- <label for="">Ticket Price</label> -->
-                                <input type="number" class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none" id="" placeholder="Ticket Price">
+                            <div class="form-group col-md-7">
+                                <label for="">Ticket Price</label>
+                                <input type="number" class="form-control" id="" placeholder="">
                             </div>
-                            <div class="form-group pt-2 col-md-5">
-                                <!-- <label for="">Ticket Limit</label> -->
-                                <input type="number" class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none" id="" placeholder="Ticket Limit">
+                            <div class="form-group col-md-5">
+                                <label for="">Ticket Limit</label>
+                                <input type="number" class="form-control" id="" placeholder="">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group pt-2 col-md-6">
-                                <label for=""><small>Category:</small></label>
-                                <select id="inputState" class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none">
+                            <div class="form-group col-md-6">
+                                <label for="">Category</label>
+                                <select id="inputState" class="form-control">
                                     <option value="Exhibition">Exhibiton</option>
                                     <option value="Meetup">Meetups</option>
                                     <option value="Party">Parties</option>
@@ -106,16 +99,16 @@ require('./connections/user_login_status.php'); ?>
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
-                            <div class="form-group pt-2 col-md-6">
-                                <label for=""><small>Event Package:</small></label>
-                                <select id="inputState" class="form-control rounded-0 border-top-0 border-right-0 border-left-0 bg-transparent shadow-none">
-                                    <option value="Essentials Package">Essentials Package</option>
-                                    <option value="Professional Package">Professional Package</option>
+                            <div class="form-group col-md-6">
+                                <label for="">Event Package</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Essentials Package</option>
+                                    <option>Professional Package</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group pt-2">
-                            <button type="submit" class="btn btn-purple mt-3">Create Event</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn bg-purple text-light mt-3">Create Event</button>
                         </div>
                     </form>
                 </div>

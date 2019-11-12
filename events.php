@@ -26,7 +26,7 @@ require('./connections/user_login_status.php');?>
     <!-- HEADER NAVBAR-->
     <?php require('header_slim.php') ?>
     <!-- SEARCH -->
-    <section class="">
+    <section class="bg-light">
         <div class="container">
 
             <div class="input-group pt-3">
@@ -44,7 +44,7 @@ require('./connections/user_login_status.php');?>
 
     <!-- EVENTS -->
     <section>
-        <div class="album py-5">
+        <div class="album py-5 bg-light">
             <div class="container">
                 <h2 class="pb-3">EVENTS</h2>
                 <div class="row">
@@ -58,27 +58,7 @@ require('./connections/user_login_status.php');?>
                             <!-- <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false"
                                 role="img" aria-label="Placeholder: Thumbnail"> -->
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href=""><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-cart-plus fa-lg"></i></button>
-                                    </div>
-                                    <small class=""><a class="text-muted" href=""><i class="far fa-heart fa-lg"></i></a></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                     additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -98,28 +78,7 @@ require('./connections/user_login_status.php');?>
                                 <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
                             </svg>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                                    </div>
-                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                     additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -139,27 +98,7 @@ require('./connections/user_login_status.php');?>
                                 <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
                             </svg>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                                    </div>
-                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                     additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -173,62 +112,130 @@ require('./connections/user_login_status.php');?>
                         </div>
                     </div>
 
+                    
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            <a href=""><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false" role="img" aria-label="Placeholder: Thumbnail"></a>
+                            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
                                 <title>Placeholder</title>
                                 <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
+                            </svg> -->
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
+                                <p class="card-text text-truncate">This is a wider card with supporting text below as a natural lead-in to
                                     additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <!-- <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                                     </div>
                                     <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div> -->
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Price: Free</span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
+                            <a href=""><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false" role="img" aria-label="Placeholder: Thumbnail"></a>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
+                                <p class="card-text text-truncate">This is a wider card with supporting text below as a natural lead-in to
                                     additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
                                 <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Price: Free</span>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                                     </div>
-                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
+                            <a href=""><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false" role="img" aria-label="Placeholder: Thumbnail"></a>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
+                                <p class="card-text text-truncate">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Price: Free</span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <a href=""><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false" role="img" aria-label="Placeholder: Thumbnail"></a>
+                            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+                            <div class="card-body">
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                     additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Price: Free</span>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                                     </div>
-                                    <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <a href=""><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false" role="img" aria-label="Placeholder: Thumbnail"></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Price: Free</span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <a href=""><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false" role="img" aria-label="Placeholder: Thumbnail"></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a class="text-dark" href="">Card title</a></h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Price: Free</span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Wishlist</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +244,7 @@ require('./connections/user_login_status.php');?>
             </div>
 
             <!-- PAGINATION -->
-            <section class="">
+            <section class=" bg-light">
                 <div class="container pt-3">
                     <nav aria-label="Page navigation example text-dark">
                         <ul class="pagination justify-content-center">
