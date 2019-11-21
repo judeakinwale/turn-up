@@ -1,5 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php';   ?>
+// include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php';   ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php'
 
 </head>
 
-<body class="bg-purple">
+<body id="bg-img">
 
     <!-- HEADER NAVBAR-->
     <?php require('header.php'); ?>
@@ -28,7 +28,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php'
 
         <!-- FEATURED IMAGE AND EVENT DETAILS -->
         <section>
-            <div class="jumbotron jumbotron-fluid py-0 bg-transparent">
+            <div class="jumbotron jumbotron-fluid pb-0 pt-3 bg-transparent">
                 <div class="row px-md-3">
                     <div class="col-md-3"></div>
                     <!-- jumbotron-image is the featured image -->
@@ -39,10 +39,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php'
                                 <h1 class="display-4 font-weight-bold"><a href="" class="nav-link text-light">LAGOS CARNIVAL</a></h1>
                                 <h3 class="lead"><a href="" class="nav-link text-light">TBS Lagos Island</a></h3>
                             </div>
+                            <div class="w-100"></div>
                             <!-- GET TICKETS BUTTON -->
-                            <div class="col-12 py-md-5 py-3">
-                                <button type="button" class="btn btn-lg btn-dark border bg-purple m-md-5 m-3">GET TICKETS</button>
+                            <div class="col-12 py-md-5 py-3 m-md-5 m-3">
+                                <button type="button" class="btn btn-lg btn-outline-w bg-purple">GET TICKETS</button>
                             </div>
+                            <!-- <button type="button" class="btn btn-lg btn-dark border bg-purple m-md-5 m-3">GET TICKETS</button> -->
+
                         </div>
                     </div>
                 </div>
@@ -56,14 +59,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php'
                 <div class="col-md-3"></div>
                 <div class="col-md-9 col-12">
                     <div class="row justify-content-between">
-                        <div class="col-sm-4 py-3 px-3">
-                            <a href=""><img src="img/02.png" class="rounded-xl img-fluid" alt="image" height=""></a>
+                        <div class="col-sm-4 my-3">
+                            <a href=""><img src="img/02.png" class="rounded-xl img-fluid shadow-anim-black" alt="image" height=""></a>
                         </div>
-                        <div class="col-sm-4 py-3 px-3">
-                            <a href=""><img src="img/02.png" class="rounded-xl img-fluid" alt="image" height=""></a>
+                        <div class="col-sm-4 my-3">
+                            <a href=""><img src="img/02.png" class="rounded-xl img-fluid shadow-anim-black" alt="image" height=""></a>
                         </div>
-                        <div class="col-sm-4 py-3 px-3">
-                            <a href=""><img src="img/02.png" class="rounded-xl img-fluid" alt="image" height=""></a>
+                        <div class="col-sm-4 my-3">
+                            <a href=""><img src="img/02.png" class="rounded-xl img-fluid shadow-anim-black" alt="image" height=""></a>
                         </div>
                     </div>
                 </div>

@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="bg-light">
+<body id="bg-img">
 
     <!-- HEADER NAVBAR-->
     <?php require('header_slim.php'); ?>
@@ -28,7 +28,7 @@
     <!-- SIGN UP -->
     <section>
         <div class="">
-            <div class="container py-5">
+            <div class="container py-5 text-transparent-70">
                 <div class="row">
                     <div class="col-lg-6">
                         <?php echo "<p class='text-danger'>" . @$_SESSION['db_create_profile_error'] . "</p>"; ?>
@@ -74,7 +74,7 @@
                                     <input name="password" type="password" class="form-control" id="inputPassword" placeholder=""
                                         aria-describedby="passwordHelpBlock">
                                     <div class="input-group-prepend">
-                                        <button class="btn btn-default border border-left-0 rounded-right" type="button" onclick="showpass()">
+                                        <button class="btn btn-default border border-left-0 rounded-right text-light" type="button" onclick="showpass()">
                                             <i class="fa fa-eye-slash" id="show-eye"></i>
                                         </button>
                                     </div>
@@ -113,7 +113,7 @@
                             <button type="submit" class="btn bg-purple text-light">Sign Up</button>
                         </form>
                         <div class="my-3 text-center">
-                            <small class="">Have an account? <a href="sign in.html">Sign In</a></small>
+                            <small class="">Have an account? <a href="sign_in.php">Sign In</a></small>
                         </div>
                     </div>
                     <div class="col-lg-6">

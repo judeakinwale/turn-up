@@ -21,13 +21,13 @@ require('./connections/user_login_status.php'); ?>
 
 </head>
 
-<body class="bg-light">
+<body id="bg-img">
 
     <!-- HEADER NAVBAR-->
     <?php require('header_slim.php') ?>
     <!-- ABOUT -->
     <section>
-        <div class="bg-light">
+        <div class="text-transparent-70">
             <div class="container">
                 <h1 class="py-5">FAQ</h1>
                 <div class="row pb-3">

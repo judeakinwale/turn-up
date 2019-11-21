@@ -1,13 +1,45 @@
 /* body{font-family: 'Montserrat', sans-serif !important;} */
+/* body{background-image: linear-gradient(90deg, rgba(85, 1, 134, 0), rgba(83, 1, 134, 0.575));} */
+#bg-img{
+    /* background-color: rgb(86, 1, 134); */
+    position: relative;
+    background-color: rgb(86, 1, 134);
+    /* background-color: #fff; */
+    /* background-image: url(../img/new/50-Beautiful-and-Minimalist-Presentation-Backgrounds-038.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+#bg-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background-image-purple.jpg);
+    /* height: 100vh; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
 .bg-purple{background-color: rgb(86, 1, 134);}
 .text-purple{color: #560186;}
+.text-transparent-70{color: rgb(255, 255, 255);color: rgba(255, 255, 255, 0.8);}
 .btn-purple{color: #fff;background-color: #560186;border-color: #560186;}
 .btn-purple:hover{color:#fff;background-color:#560186;border-color:#560186}
 .btn-purple.focus,.btn-purple:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.555)}
-.btn-outline-purple{color:#560186;border-color:#560186}
-
+.btn-outline-purple{color:#560186;border-color:#560186;transition: 0.5s;}
 .btn-outline-purple:hover{color:#fff;background-color:#560186;border-color:#560186}
 .btn-outline-purple.focus,.btn-outline-purple:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.555)}
+.btn-outline-w{color:#fff;border-color:#fff;position: relative;}
+.btn-outline-w:hover{color:#560186;background-color:#fff;border-color:#560186}
+.btn-outline-w.focus,.btn-outline-purple:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.555)}
 /* .btn-outline-purple.disabled,.btn-outline-purple:disabled{color:#560186;background-color:transparent} */
 /* .btn-outline-purple:not(:disabled):not(.disabled).active, */
 /* .btn-outline-purple:not(:disabled):not(.disabled):active,.show> */
@@ -15,7 +47,7 @@
 /* .btn-outline-purple:not(:disabled):not(.disabled).active:focus, */
 /* .btn-outline-purple:not(:disabled):not(.disabled):active:focus,.show> */
 .btn-outline-purple.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.555)}
-
+.form-control.focus,.form-control:focus{box-shadow:0 0 0 .2rem rgba(85, 1, 134, 0.440) !important;}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -27,7 +59,7 @@
 .logo{width: 36px;}
 .copyright-text{font-size: 10px;}
 .rounded-xl{border-radius: 30px;}
-.transparent-dark{background-color: #0000004f !important;}
+.transparent-dark{background-color: #4e4e4e;background-color: #0000004f !important;}
 .jumbotron-image{
     background-image: url(../img/02.png);
     height: 500px;/* You must set a specified height */
@@ -37,7 +69,23 @@
 }
 .w-75p{width: 75%;}
 .w-100p{width: 100%;}
-
+.shadow-anim{
+    transition: 0.5s !important;
+}
+.shadow-anim:hover{box-shadow: 1px 1px 10px #333 !important;}
+.shadow-anim-black{
+    transition: 0.5s !important;
+}
+.shadow-anim-black:hover{box-shadow: 1px 1px 10px #000 !important;}
+.trans-500{
+    transition: 500ms;
+}
+.full-height{
+    height: 100vh!important;
+}
+/* .nav-item .nav-link:hover{
+    color: rgb(255, 164, 27) !important;
+} */
 @media (min-width:576px){
     
 }

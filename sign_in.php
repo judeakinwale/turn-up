@@ -19,14 +19,14 @@
 
 </head>
 
-<body class="bg-light">
+<body id="bg-img">
 
     <!-- HEADER NAVBAR-->
     <?php require('header_slim.php') ?>
     <!-- SIGN IN -->
     <section>
-        <div class="">
-            <div class="container py-5">
+        <div class="full-height">
+            <div class="container py-5 text-transparent-70">
                 <div class="row">
                     <div class="col-lg-6">
                         <form method="POST" action="./connections/process_sign_in.php" onsubmit="return validateSignIn()">
@@ -41,7 +41,7 @@
                                 <div class="input-group">
                                     <input name="password" type="password" class="form-control" id="inputPassword" placeholder="" />
                                     <div class="input-group-prepend">
-                                        <button class="btn btn-default border border-left-0 rounded-right" type="button" onclick="showpass()">
+                                        <button class="btn btn-default border border-left-0 rounded-right text-light" type="button" onclick="showpass()">
                                             <i class="fa fa-eye-slash" id="show-eye"></i>
                                         </button>
                                     </div>
