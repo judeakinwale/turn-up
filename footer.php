@@ -1,4 +1,4 @@
-<section class="container-fluid bg-purple">
+<footer class="container-fluid bg-purple">
 
     <div class="row">
         <div class="col-12 col-md pt-3 px-5">
@@ -32,7 +32,7 @@
             <p class="copyright-text text-center text-light">&copy; 2019 TURN UP, RIGHTS RESERVED </p>
         </div>
     </div>
-</section>
+</footer>
 
 <!-- JAVASCRIPT -->
 <section>

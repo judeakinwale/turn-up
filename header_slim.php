@@ -14,15 +14,11 @@
                 <li class="nav-item px-3">
                     <a class="nav-link text-light" href="events.php">BROWSE EVENT</a>
                 </li>
-                <!-- <li class="nav-item px-3">
-                    <a class="nav-link text-light" href="organize.php">ORGANIZE</a>
-                </li> -->
                 <li class="nav-item px-3">
                     <a class="nav-link text-light" href="help.php">HELP</a>
                 </li>
                 <li class="nav-item px-3">
-                    <!-- <a class="nav-link text-light" href="create_event.php" data-toggle="modal" data-target="#exampleModalScrollable">CREATE EVENT</a> -->
-                    
+                   
                     <!-- Button trigger modal -->
                     <a class="nav-link text-light" href="" data-toggle="modal" data-target="#exampleModalScrollable">CREATE EVENT</a>
                     
@@ -134,8 +130,6 @@
                                 </div>
                                 <div class="modal-footer justify-content-center">
                                     <button type="submit" class="btn bg-purple text-light w-75">Create Event</button>
-                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button> -->
                                 </div>
                             </div>
                         </div>

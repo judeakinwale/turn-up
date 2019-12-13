@@ -1,11 +1,11 @@
-<section class="container-fluid">
+<footer class="container-fluid">
     <div class="row">
         <!-- COPYRIGHT -->
         <div class="col justify-content-center">
             <p class="copyright-text text-center">&copy; 2019 TURN UP, RIGHTS RESERVED </p>
         </div>
     </div>
-</section>
+</footer>
 
 <!-- JAVASCRIPT -->
 <section>

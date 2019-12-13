@@ -24,7 +24,7 @@
 
     <!-- HEADER NAVBAR-->
     <?php require('header.php'); ?>
-    <section class="container-fluid">
+    <main class="container-fluid">
 
         <!-- FEATURED IMAGE AND EVENT DETAILS -->
         <section>
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </section>
-    </section>
+    </main>
     
     <!-- FOOTER -->
     <?php require('footer.php') ?>
