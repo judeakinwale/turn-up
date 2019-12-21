@@ -35,12 +35,12 @@
                             <div class="form-row" id="name_row">
                                 <div class="form-group col-sm-6">
                                     <label for="InputFirstName">First name</label>
-                                    <input name="first_name" type="text" class="form-control" placeholder="First name" id="InputFirstName">
+                                    <input name="first_name" type="text" class="form-control" placeholder="First name" id="InputFirstName" required>
 
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="InputLastName">Last name</label>
-                                    <input name="last_name" type="text" class="form-control" placeholder="Last name" id="InputLastName">
+                                    <input name="last_name" type="text" class="form-control" placeholder="Last name" id="InputLastName" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -49,7 +49,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="inputEmail1">Email</label>
-                                <input name="e_mail" type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="">
+                                <input name="e_mail" type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="" required>
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group">
@@ -60,7 +60,7 @@
                                             <span id="flag"></span>
                                         </span>
                                     </div>
-                                    <input name="mobile_number" type="tel" class="form-control" id="inputPhoneNo">
+                                    <input name="mobile_number" type="tel" class="form-control" id="inputPhoneNo" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -71,7 +71,7 @@
                                 <label for="inputPassword">Password</label>
                                 <div class="input-group">
                                     <input name="password" type="password" class="form-control" id="inputPassword" placeholder=""
-                                        aria-describedby="passwordHelpBlock">
+                                        aria-describedby="passwordHelpBlock" required>
                                     <div class="input-group-prepend">
                                         <button class="btn btn-default border border-left-0 rounded-right text-light" type="button" onclick="showpass()">
                                             <i class="fa fa-eye-slash" id="show-eye"></i>
@@ -85,21 +85,21 @@
                             <div class="form-row">
                                 <div class="form-group col-md-8">
                                     <label for="inputAddress">Address</label>
-                                    <input name="address" type="text" class="form-control" id="inputAddress" placeholder="">
+                                    <input name="address" type="text" class="form-control" id="inputAddress" placeholder="" required>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputCity">City</label>
-                                    <input name="city" type="text" class="form-control" id="inputCity">
+                                    <input name="city" type="text" class="form-control" id="inputCity" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputCountry">Country</label>
-                                    <select name="country" id="inputCountry" class="form-control">
+                                    <select name="country" id="inputCountry" class="form-control" required>
                                         <option selected>Choose...</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputState">State</label>
-                                    <select name="state" id="inputState" class="form-control">
+                                    <select name="state" id="inputState" class="form-control" required>
                                         <option selected>Choose...</option>
                                     </select>
                                 </div>
@@ -109,7 +109,7 @@
                                 <label class="form-check-label" for="Check1"><small>Agree to the <a href="">terms and conditions</small></a></label>
                             </div>
 
-                            <button type="submit" class="btn bg-purple text-light">Sign Up</button>
+                            <button type="submit" class="btn bg-purple text-light border-secondary">Sign Up</button>
                         </form>
                         <div class="my-3 text-center">
                             <small class="">Have an account? <a href="sign_in.php">Sign In</a></small>

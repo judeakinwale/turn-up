@@ -132,7 +132,7 @@
   transition: 0.5s !important;
 }
 .shadow-anim:hover {
-  box-shadow: 1px 1px 10px #333 !important;
+  box-shadow: 1px 1px 10px rgba(51, 51, 51, 0.3) !important;
 }
 .shadow-anim-black {
   transition: 0.5s !important;
@@ -140,11 +140,17 @@
 .shadow-anim-black:hover {
   box-shadow: 1px 1px 10px #000 !important;
 }
+.white-shadow{
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.30);
+}
 .trans-500 {
   transition: 500ms;
 }
 .full-height {
   height: 100vh !important;
+}
+.height-92{
+  height: 92vh !important;
 }
 @media (min-width: 576px) {
 }

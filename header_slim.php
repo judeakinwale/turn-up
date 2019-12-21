@@ -17,8 +17,11 @@
                 <li class="nav-item px-3">
                     <a class="nav-link text-light" href="help.php">HELP</a>
                 </li>
+                <?php
+                    if (isset($_SESSION['db_username'])) {
+                        echo '
                 <li class="nav-item px-3">
-                   
+                    
                     <!-- Button trigger modal -->
                     <a class="nav-link text-light" href="" data-toggle="modal" data-target="#exampleModalScrollable">CREATE EVENT</a>
                     
@@ -134,7 +137,9 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li>';
+                }
+                ?>
                 <li class="nav-item pl-3">
                     <?php
                     if (isset($_SESSION['db_username'])) {

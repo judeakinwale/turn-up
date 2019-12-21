@@ -24,7 +24,7 @@
     <?php require('header_slim.php') ?>
     <!-- SIGN IN -->
     <section>
-        <div class="full-height">
+        <div class="height-92">
             <div class="container py-5 text-transparent-70">
                 <div class="row">
                     <div class="col-lg-6">
@@ -50,7 +50,7 @@
                                 <input name="remember_me" type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remember me</label>
                             </div>
-                            <button type="submit" class="btn bg-purple text-light">Sign In</button>
+                            <button type="submit" class="btn bg-purple text-light border-secondary">Sign In</button>
                         </form>
                     </div>
 

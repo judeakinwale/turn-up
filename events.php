@@ -20,12 +20,12 @@ require('./connections/user_login_status.php');?>
 
 </head>
 
-<body id="bg-img">
+<body id="bg-im">
 
     <!-- HEADER NAVBAR-->
     <?php require('header_slim.php') ?>
     <!-- SEARCH -->
-    <section class="bg-ligh">
+    <section class="">
         <div class="container bg-white">
 
             <div class="input-group pt-3">

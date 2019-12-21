@@ -52,18 +52,23 @@ require('./connections/user_login_status.php');?>
                     
                 </div>
                 <div class="row h-25 justify-content-center">
-                    <h3 class="text-center">@Event organizer link</h3>
+                    <h4 class="text-center">@Event organizer link</h4>
                 </div>
                 <div class="row align-items-end">
-                    <div class="col-12 pt-5">
-                        <button class="btn btn-lg btn-outline-light w-100" type="submit">Buy Ticket</button>
+                    <div class="col-12">
+                        <span>
+                            <h4>Price: $0.00</h4>
+                        </span>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <a class="btn btn-lg btn-outline-light w-100" href="./cart.php">Buy Ticket</a>
                     </div>               
                 </div>
             </div>
 
         <div class="row">
             <div class="col-md-8 p-5">
-                <h5>Description:</h5>
+                <h5 class="mt-5 mt-md-0">Description:</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus quo cumque recusandae illum voluptas
                     repudiandae. Quam, eum dignissimos saepe repellat optio sint.</p>
             
