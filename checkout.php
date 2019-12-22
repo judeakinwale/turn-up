@@ -34,6 +34,17 @@
             <div class="row">
                 <div class="col-md-8 text-transparent-70 mb-5">
                         <form class="">
+                            <div class="form-group">
+                                <label for="name-2" class="">Name</label>
+                                <input type="text" id="name-2" class="form-control" placeholder="">
+                                <small class="text-muted">Use a different name on the ticket(s)</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-2" class="">Email</label>
+                                <input type="email" id="email-2" class="form-control" placeholder="Apartment or suite">
+                                <small class="text-muted">Send ticket(s) to an alternate email address</small>
+                            </div>
+    
                             <div class="form-row">
                                 <div class="form-group col-md-8">
                                     <label for="inputAddress">Address</label>
@@ -44,30 +55,20 @@
                                     <input name="city" type="text" class="form-control" id="inputCity">
                                 </div>
                             </div>
-    
-                            <div class="form-group">
-                                <label for="address-2" class="">Address 2 (optional)</label>
-                                <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
-                            </div>
-    
-                            <!--Grid row-->
+
                             <div class="form-row">
-                                <!--Grid column-->
                                 <div class="col-lg-4 col-md-12 mb-4">
     
                                     <label for="country">Country</label>
                                     <select class="custom-select d-block w-100" id="country" required>
                                         <option value="">Choose...</option>
-                                        <option>United States</option>
+                                        <option>Nigeria</option>
                                     </select>
                                     <div class="invalid-feedback">
                                         Please select a valid country.
                                     </div>
-    
                                 </div>
-                                <!--Grid column-->
-    
-                                <!--Grid column-->
+
                                 <div class="col-lg-4 col-md-6 mb-4">
     
                                     <label for="state">State</label>
@@ -78,11 +79,8 @@
                                     <div class="invalid-feedback">
                                         Please provide a valid state.
                                     </div>
-    
                                 </div>
-                                <!--Grid column-->
-    
-                                <!--Grid column-->
+
                                 <div class="col-lg-4 col-md-6 mb-4">
     
                                     <label for="zip">Zip</label>
@@ -90,13 +88,8 @@
                                     <div class="invalid-feedback">
                                         Zip code required.
                                     </div>
-    
-                                </div>
-                                <!--Grid column-->
-    
-                            </div>
-                            <!--Grid row-->
-    
+                                </div>    
+                            </div>    
                             <hr>
     
                             <div class="custom-control custom-checkbox">
@@ -224,9 +217,7 @@
                     </form>
                     <!-- Promo code -->
     
-                </div>
-                <!--Grid column-->
-    
+                </div>    
             </div>
     
         </div>
