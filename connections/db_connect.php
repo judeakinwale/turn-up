@@ -46,8 +46,9 @@ $conn = mysqli_connect($dbhost, $dbuser, $dbpass) or die('unable to connect now 
 $conn->query($db_turn_up) or die('can not create database' . mysqli_error($conn));
 //select database
 $conn->select_db("turn_up") or die('can not select database ' . mysqli_error($conn));
-//create tableF
+//create table user
 $conn->query($table_users_profile) or die('can not create table ' . mysqli_error($conn));
+//create event table
 $conn->query($table_events) or die('can not create table ' . mysqli_error($conn));
 // echo 'created';
     //require_once 'dataconn.php';
