@@ -1,4 +1,5 @@
 <?php
+echo 'okau';
 session_start();
 require 'db_connect.php';
 if (isset($_COOKIE['login_token'])) {
