@@ -1,4 +1,4 @@
-<section class="bg-purple">
+<header class="bg-purple">
 
     <nav class="navbar navbar-expand-lg navbar-light text-light px-3">
         <!-- LOGO AND BRAND -->
@@ -165,4 +165,4 @@
             </ul>
         </div>
     </nav>
-</section>
+</header>
