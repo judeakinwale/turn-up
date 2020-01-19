@@ -28,7 +28,7 @@ $table_events =  "CREATE TABLE IF NOT EXISTS `events`
 ( `ID` INT(10) NOT NULL AUTO_INCREMENT , 
 `event_name` VARCHAR(20) NOT NULL , 
 `event_description` TEXT(200) NOT NULL , 
-`event_image` VARCHAR(15) NULL , 
+`event_image` VARCHAR(40) NOT NULL , 
 `event_country` VARCHAR(20) NOT NULL ,    
 `event_state` VARCHAR(20) NOT NULL ,  
 `event_location` TEXT(100) NULL , 

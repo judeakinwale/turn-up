@@ -1,7 +1,7 @@
 <?php
 session_start();
+require 'db_connect.php';
 if (isset($_COOKIE['login_token'])) {
-    require 'db_connect.php';
     $login_token = $_COOKIE['login_token'];
     $db_select_all_SQL = "SELECT * FROM `users_profile` WHERE `login_token` = '$login_token' LIMIT 1";
     $result = $conn->query($db_select_all_SQL);
