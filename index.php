@@ -1,5 +1,5 @@
 <?php
-// include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php';   ?>
+include $_SERVER['DOCUMENT_ROOT'] . '/turn-up/connections/user_login_status.php';   ?>
 
 <!DOCTYPE html>
 <html lang="en">

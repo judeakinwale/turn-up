@@ -15,7 +15,7 @@ xhrCountry.onreadystatechange = () => {
             selectOptions.value = country['name'];
             selectOptions.textContent = country['name'];
             selectCountry.appendChild(selectOptions);
-            console.log(country['name'])
+            // console.log(country['name'])
         });
     }
 }
@@ -26,13 +26,13 @@ const action = () => {
     let selectedCountry = selectCountry.value;
     let selectedCountryJSON = countries.find(country => selectedCountry === country['name']);
     // console.log(mobile_number);
-    mobile_number.setAttribute('placeholder', '+' + selectedCountryJSON['callingCodes'][0]);
+    // mobile_number.setAttribute('placeholder', '+' + selectedCountryJSON['callingCodes'][0]);
     flagImage.src = selectedCountryJSON['flag'];
     flagImage.width = 50;
     flagImage.height = 25;
     flagImage.alt = selectedCountryJSON['alpha3Code'];
     // console.log(flagImage);
-    flag.appendChild(flagImage);
+    // flag.appendChild(flagImage);
     let countryStates;
     let xhrState = new XMLHttpRequest();
     xhrState.onreadystatechange = () => {

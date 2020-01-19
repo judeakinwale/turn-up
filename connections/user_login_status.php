@@ -11,7 +11,7 @@ if (isset($_COOKIE['login_token'])) {
     }
 } else {
     if (!($_SERVER['REQUEST_URI'] == '/turn-up/' || $_SERVER['REQUEST_URI'] == '/turn-up/index.php')) {
-        header('Location: ./index.php');
+        // header('Location: ./index.php');
         header('Location: ./sign_in.php');
     }
 }
