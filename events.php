@@ -48,7 +48,6 @@ require('./connections/user_login_status.php'); ?>
                 <!-- <h2 class="pb-3">EVENTS</h2> -->
                 <div class="row justify-content-between">
                     <?php
-<<<<<<< HEAD
                     $select_events_SQL = "SELECT * FROM events";
                     if ($select_events_results = $conn->query($select_events_SQL)) {
                         if ($select_events_results->num_rows > 0) {
@@ -60,13 +59,13 @@ require('./connections/user_login_status.php'); ?>
                                         . '&event_description=' . $rows['event_description']
                                         . '&event_image=' . $rows['event_image']
                                         . '&event_country=' . $rows['event_country']
-                                        . '&event_state=' . $rows['event_state'] 
-                                        . '&event_city=' . $rows['event_city'] 
-                                        . '&event_location=' . $rows['event_location'] 
-                                        . '&ticket_price=' . $rows['ticket_price']  
+                                        . '&event_state=' . $rows['event_state']
+                                        . '&event_city=' . $rows['event_city']
+                                        . '&event_location=' . $rows['event_location']
+                                        . '&ticket_price=' . $rows['ticket_price']
                                         . '&ticket_limit=' . $rows['ticket_limit']
-                                        . '&event_category=' . $rows['event_category'] 
-                                        . '&event_package=' . $rows['event_package'] 
+                                        . '&event_category=' . $rows['event_category']
+                                        . '&event_package=' . $rows['event_package']
                                         . '">'
                                         . '<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/event_img/' . $rows['event_image'] . '" alt="' . $rows['event_name'] . ' image" focusable="false" role="img" aria-label="Placeholder: Thumbnail">'
                                         . '<div class="card-body">'
@@ -101,37 +100,6 @@ require('./connections/user_login_status.php'); ?>
 
 
 
-=======
-                    $result = $conn->query("SELECT * FROM events WHERE ID=ID") or die($conn->error);
-                    while ($row = $result->fetch_assoc()) :
-                    ?>
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-
-                                <?php echo "<img class='img-fluid' src='event_images/" . $row['image'] . "' width='300px' height='130'>" ?>
-                                <!-- To replace the svg above -->
-                                <!-- <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/02.png" alt="Placeholder" focusable="false"
-                                role="img" aria-label="Placeholder: Thumbnail"> -->
-                                <div class="card-body">
-                                    <h5 class="card-title"><?php echo $row['event_name']; ?></h5>
-                                    <p class="card-text"><?php echo substr($row['description'], 0, -20) . '.....' ?> </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a class="btn btn-sm btn-outline-secondary" href="../turn-up/more-details/pages.php?event_page=<?php echo $row["ID"]; ?>" name="event_page">View</a>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                                        </div>
-                                        <small class="text-muted"><a class="text-muted" href="">Add to Wishlist</a></small>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-
-
-
-                    <!--
->>>>>>> merge completed
                     <div class="col-md-4">
                         <div class="card mb-5 border-0 shadow-anim">
                             <!-- <div> -->
@@ -238,7 +206,6 @@ require('./connections/user_login_status.php'); ?>
                     </div> -->
 
 
-<<<<<<< HEAD
                 </div>
             </div>
             <!-- PAGINATION -->
@@ -260,28 +227,6 @@ require('./connections/user_login_status.php'); ?>
                 </div>
             </section>
         </div>
-=======
-                    <!-- PAGINATION -->
-                    <section class=" bg-light">
-                        <div class="container pt-3">
-                            <nav aria-label="Page navigation example text-dark">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link text-dark" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </section>
-
-                </div>
->>>>>>> merge completed
     </section>
 
     <!-- FOOTER -->
