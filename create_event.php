@@ -36,14 +36,14 @@ require('./connections/user_login_status.php'); ?>
                         </div>
                         <div class="form-group">
                             <label for="">Description</label>
-                            <input type="text" class="form-control" id="description" name="event-description" placeholder="">
+                            <textarea class="form-control" id="description" name="event-description" rows="3"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="imageUpload">Event Image</label>
                             <div class="input-group">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="imageUpload" name="event-image" accept="image/*" aria-describedby="inputGroupFileAddon04">
-                                    <label id="imageUpload-name" class="custom-file-label" for="imageUpload">Choose Imageeeeeee</label>
+                                    <label id="imageUpload-name" class="custom-file-label" for="imageUpload">Choose Image</label>
                                 </div>
                                 <!-- <div class="input-group-append">
                                     <button class="btn btn-outline-purple" type="button" id="imageUploadButton">Upload</button>

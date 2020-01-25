@@ -24,6 +24,7 @@ UNIQUE (`username`),
 UNIQUE (`mobile_number`),
 UNIQUE (`e_mail`)) 
 ENGINE = InnoDB;";
+
 $table_events =  "CREATE TABLE IF NOT EXISTS `events` 
 ( `ID` INT(10) NOT NULL AUTO_INCREMENT , 
 `event_name` VARCHAR(20) NOT NULL , 
